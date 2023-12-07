@@ -1,8 +1,16 @@
+/* BASE STYLES */
+body {
+    color: #111111;
+    background-color: #fafafa;
+}
+
+/* HEADER SECTION */
 .header {
 }
 .header-nav {
 }
 .header-logo {
+    color: #111111;
 }
 .header-logo-accent {
 }
@@ -21,4 +29,137 @@
 .socials-link {
 }
 .socials-img {
+}
+
+/* HERO SECTION */
+.hero-section {
+}
+.hero-title {
+}
+.hero-list {
+}
+.hero-list-item {
+}
+.hero-btn {
+}
+.hero-btn-scroll {
+}
+
+/* BENEITS */
+.benefits-section {
+}
+.bnf-subtitle {
+}
+.bnf-description {
+}
+
+/* TASTES */
+.tastes-section {
+}
+.tastes-title {
+}
+.tastes-list {
+}
+.tastes-list-item {
+}
+.tastes-img {
+}
+.tastes-description {
+}
+
+
+/* HOW IT`S MADE */
+.made-section {
+}
+.made-title {
+}
+.made-img {
+}
+.made-subtitle {
+}
+.made-list {
+}
+.made-list-item {
+}
+.made-text {
+}
+
+
+/* PRODUCTS */
+.products-section {
+}
+.products-title {
+}
+.rpoducts-list {
+}
+.products-list-item {
+}
+.products-img {
+}
+.products-subtitle {
+}
+.products-description {
+}
+.products-btn {
+}
+
+
+/* TOP SELLERS */
+.sellers-section {
+}
+.sellers-title {
+}
+.sellers-list {
+}
+.sellers-list-item {
+}
+.sellers-img {
+}
+.sellers-description {
+}
+
+
+/* REVIEW */
+.review-section {
+}
+.review-title {
+}
+.review-list {
+}
+.review-list-item {
+}
+.review-img {
+}
+.review-subtitle {
+}
+.review-description {
+}
+.review-btn {
+}
+
+
+/* FOOTER */
+.footer {
+}
+.footer-text {
+}
+.footer-span {
+}
+.footer-list-social {
+}
+.footer-social-item {
+}
+.footer-social-img {
+}
+.footer-address {
+}
+.footer-contact-text {
+}
+.footer-link-address {
+}
+.footer-list {
+}
+.footer-list-item {
+}
+.footer-link {
 }
