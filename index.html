@@ -3,13 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&family=Raleway:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Simply Chocolate</title>
     <link rel="shortcut icon" href="./images/chocolate.svg" type="image/x-icon">
 </head>
 <body>
     <!--HEADER-->
     <header class="header">
-        <nav class="header-nav">
+
+        <div class=" header-container container">
+            <nav class="header-nav">
             <a class="header-logo" href="./index.html" >
                 <span class="header-logo-accent">SIMPLY</span> CHOCOLATE
                 <img class="header-logo-img" src="./images/chocolate.svg" alt="logo" width="24" height="24">
@@ -27,16 +34,16 @@
             </li>
             </ul>
 
-            <ul class="socials">
-                <li class="socials-list">
+            <ul class="socials-list">
+                <li class="socials-list-item">
                     <a  class="socials-link" href="https://facebook.com"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Facebook site">
-                        <img class="socials-img" src="./images/facebook.svg" alt="facebook" width="24" height="24">
+                        <img class="socials-img" src="./images/icon-facebook.svg" alt="facebook" width="24" height="24">
                     </a>
                 </li>
-                <li class="socials-list">
+                <li class="socials-list-item">
                     <a class="socials-link" href="https://instagram.com"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -44,7 +51,7 @@
                         <img class="socials-img" src="./images/icon-instagram.svg" alt="instagram" width="24" height="24">
                 </a>
                 </li>
-                <li class="socials-list"> 
+                <li class="socials-list-item"> 
                     <a class="socials-link" href="https://twitter.com"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -54,76 +61,91 @@
                 </li>
             </ul>
         </nav>
+    </div>
     </header>
 
 
     <!-- MAIN -->
     <main class="main">
+
         <!-- HERO SECTION -->
         <section class="hero-section">
+            <div class=" hero-container container">
             <h1 class="hero-title">Treat yourself or a loved one to our finest ingredients for a moment of pure delight!</h1>
             <ul class="hero-list">
                 <li class="hero-list-item">
-                    <button type="button">Buy now</button>
+                    <button type="button" class="btn-orange">Buy now</button>
                 </li>
                 <li class="hero-list-item">
                     <button type="button" class="hero-btn">How it’s made</button>
                 </li>
             </ul>
             <button type="button" class="hero-btn-scroll">scroll down</button>
+            </div>
         </section>
 
         <!--BENEFITS -->
         <section class="benefits-section">
-           <h2>Benefits</h2>
+            <div class="container">
+           <h2 class="visually-hidden">Benefits</h2>
            <h3 class="bnf-subtitle">Unsurpassed taste</h3>
            <p class="bnf-description">Crafted with the finest quality cocoa beans and a dedication to perfection, each bite is a decadent experience that simply cannot be matched. Savor the richness and complexity of our Unsurpassed Taste and discover a new level of chocolate bliss.</p>
            <h3 class="bnf-subtitle">Affordable price</h3>
            <p class="bnf-description">Indulge in high-quality chocolate without breaking the bank with Simply Chocolate's selection of affordable treats. Enjoy mouth-watering truffles and velvety chocolate bars without sacrificing taste or quality. Browse our selection and indulge in affordable luxury today.</p>
            <h3 class="bnf-subtitle">Own production</h3>
            <p class="bnf-description">We take pride in our own production process, ensuring that every step is carefully crafted to perfection. From selecting the finest ingredients to handcrafting each piece, our attention to detail is evident in every bite.</p>
+            </div>
         </section>
 
         <!-- TASTES -->
-        <section class="tastes-section">
-            <h2 class="tastes-title">It all adds up to one exceptional taste sensation</h2>
+        <section class="tastes-section section">
+            <div class="container">
+            <h2 class="tastes-title">It all adds up to one exceptional <span class="tastes-accent">taste</span> sensation</h2>
             <ul class="tastes-list">
-                <li class="tastes-list-item">
+                <li class="tastes-list-item-orange">
                     <img class="tastes-img" src="./images/img-1.png" alt="Milk-chocolate" width="214" height="160">
-                    <p class="tastes-description">MILK CHOCOLATE</p>
+                    <p class="tastes-desc-orange">MILK CHOCOLATE</p>
                 </li>
-                <li class="tastes-list-item">
+                <li class="tastes-list-item-white">
                     <img class="tastes-img" src="./images/img-2.png" alt="Milk" width="214" height="160">
-                    <p class="tastes-description">MILK</p>
+                    <p class="tastes-desc-white">MILK</p>
                 </li>
-                <li class="tastes-list-item">
+
+                <li class="tastes-list-item-black">
                     <img class="tastes-img" src="./images/img-3.png" alt="Nuts" width="214" height="160">
+                    <p class="tastes-desc-black">NUTS</p>
                 </li>
-                    <p class="tastes-description">NUTS</p>
-                <li>
+                
+                <li class="tastes-list-item-white">
                     <img class="tastes-img" src="./images/img-4.png" alt="Semi-sweet-chocolate" width="214" height="160">
-                    <p class="tastes-description">SEMI - SWEET CHOCOLATE</p>
+                    <p class="tastes-desc-white">SEMI - SWEET CHOCOLATE</p>
                 </li>
-                <li class="tastes-list-item">
+
+                <li class="tastes-list-item-orange">
                     <img class="tastes-img" src="./images/img-5.png" alt="Cacao" width="214" height="160">
-                    <p class="tastes-description">CACAO</p>
+                    <p class="tastes-desc-orange">CACAO</p>
                 </li>
-                <li class="tastes-list-item">
+
+                <li class="tastes-list-item-white">
                     <img class="tastes-img" src="./images/img-6.png" alt="Raspbery" width="214" height="160">
-                    <p class="tastes-description">CACAO</p>
+                    <p class="tastes-desc-white">Rasbery</p>
                 </li>
-                <li class="tastes-list-item">
+
+                <li class="tastes-list-item-black">
                     <img class="tastes-img" src="./images/img-7.png" alt="Coconut milk" width="214" height="160">
-                    <p class="tastes-description">COCONUT OIL</p>
+                    <p class="tastes-desc-black">COCONUT OIL</p>
                 </li>
             </ul>
+            </div>
         </section>
 
         
         <!-- HOW IT`S MADE -->
-        <section class="made-section">
-            <h2 class="made-title">How it’s made?</h2>
+        <section class="made-section section">
+            <div class="container">
+            <h2 class="made-title">How it’s <span class="made-accent">made</span>?</h2>
             <img class="made-img" src="./images/image.png" alt="" width="600" height="400">
+            <div class="made-right-side">
             <h3 class="made-subtitle">Try  our chocolates today and discover the perfect balance of flavor</h3>
             <ul class="made-list">
                 <li class="made-list-item">
@@ -142,11 +164,14 @@
                     <p class="made-text">Pour the chocolate into special containers (can be replaced with ice molds). Allow to cool and harden.</p>
                 </li>
             </ul>
+            </div>
+            </div>
         </section>
 
         <!-- PRODUCTS -->
-        <section class="products-section">
-            <h2 class="products-title">Our products</h2>
+        <section class="products-section section">
+            <div class="container">
+            <h2 class="products-title">Our <span class="products-accent">products</span></h2>
 
            <ul class="rpoducts-list">
             <li class="products-list-item">
@@ -198,11 +223,13 @@
                 <button type="button" class="products-btn">54 UAH</button>
             </li>
         </ul>
+            </div>
         </section>
        
         <!-- TOP SELLERS -->
-        <section class="sellers-section">
-            <h2 class="sellers-title">Top sellers</h2>
+        <section class="sellers-section section">
+            <div class="container">
+            <h2 class="sellers-title">Top <span class="sellers-accent">sellers</span></h2>
                 <ul class="sellers-list">
                     <li class="sellers-list-item">
                         <img class="sellers-img" src="./images/chok-1.jpg" alt="CHOCOLATE WITH NUTS" width="368" height="464">
@@ -220,11 +247,13 @@
                         </img>
                     </li>
                 </ul>
+            </div>
         </section>
         
         <!-- REVIEW -->
-        <section class="review-section">
-            <h3 class="review-title">Chocolate is loved</h3>
+        <section class="review-section section">
+            <div class="container">
+            <h3 class="review-title">Chocolate <span class="review-accent">is loved</span></h3>
                 <ul class="review-list">
                     <li class="review-list-item">
                         <img class="review-img" src="./images/Ellipse.svg" alt="Victoria Dobrzhanska">
@@ -246,21 +275,23 @@
                     </li>
                 </ul>
                 <button type="submit" class="review-btn">Leave  a review</button>
+            </div>
         </section>
     </main>
 
 
     <!-- FOOTER -->
     <footer class="footer">
+        <div class="container">
         <p class="footer-text"><span class="footer-span">Chocolate</span>a delicious cure for a bad day</p>
-        <p class="footer-text">Social networks</p>
+        <p class="footer-text-social">Social networks</p>
         <ul class="footer-list-social">
             <li class="footer-social-item">
                 <a href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook site">
-                    <img class="footer-social-img" src="./images/facebook.svg" alt="facebook" width="24" height="24">
+                    <img class="footer-social-img" src="./images/icon-1.svg" alt="facebook" width="24" height="24">
                 </a>
             </li>
             <li class="footer-social-item">
@@ -268,7 +299,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram site">
-                    <img class="footer-social-img" src="./images/icon-instagram.svg" alt="instagram" width="24" height="24">
+                    <img class="footer-social-img" src="./images/icon-2.svg" alt="instagram" width="24" height="24">
             </a>
             </li>
             <li class="footer-social-item">
@@ -276,7 +307,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Twitter site">
-                    <img class="footer-social-img" src="./images/twitter 1.svg" alt="twitter" width="24" height="24">
+                    <img class="footer-social-img" src="./images/icon-3.svg" alt="twitter" width="24" height="24">
                 </a>
             </li>
         </ul>
@@ -298,7 +329,18 @@
                 <a class="footer-link" href="">Chocolate is loved</a>
             </li>
             </ul>
-
+        </div>
     </footer>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
