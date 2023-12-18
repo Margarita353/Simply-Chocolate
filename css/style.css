@@ -22,17 +22,26 @@ ol {
     margin: 0;
     padding: 0;
 }
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 a {
     text-decoration: none;
     color: currentColor;
 }
 button {
+    padding: 0;
     font-family: inherit;
     color: currentColor;
+    border: none;
     background-color: transparent;
     cursor: pointer;
 }
-
+.socials {
+    display: flex;
+}
 .container {
     width: 1168px;
     padding-left: 16px;
@@ -50,17 +59,17 @@ button {
 }
 .header-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 .header-nav {
     display: flex;
     align-items: center;
+    margin-right: auto;
 }
 .header-logo {
     display: inline-flex;
     align-items: center;
-    margin-right: 393px;
+    margin-right: 365px;
     font-size: 18px;
     font-weight: 700;
     line-height: 1.11em;
@@ -70,12 +79,11 @@ button {
     font-style: italic;
 }
 .header-logo-img {
-    margin-left: 14px;
+    margin-left: 4px;
 }
 .header-list {
     display: flex;
     gap: 24px;
-    margin-right: 90px;
     align-items: center;
 }
 .header-list-item {
@@ -99,58 +107,112 @@ button {
 .socials-list-item {
 }
 .socials-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+}
+.socials-link:hover,
+.socials-link:focus {
+  border-color: rgba(253, 146, 34, 0.1);
 }
 .socials-img {
 }
 
 /* HERO SECTION */
-.hero-section {
-}
-.hero-container {
+.hero {
+    padding-bottom: 80px;
+  }
+  .hero-container {
     padding: 40px;
     padding-top: 381px;
+  
+    background-color: rgba(17, 17, 17, 0.7);
     border-radius: 30px;
-    background: rgba(17, 17, 17, 0.70);
-}
-.hero-title {
+  }
+  .hero-title {
     width: 484px;
     margin-bottom: 32px;
-    color: #FFF;
+  
     font-size: 28px;
     font-weight: 500;
-    line-height: 1.21em; 
-    letter-spacing: -0.03;
-}
-.hero-list {
-}
-.hero-list-item {
-}
-.btn-orange {
-    border-radius: 100px;
-    background: #FD9222;
-    color: #FFF;
+    line-height: 1.21;
+    letter-spacing: -0.03em;
+    color: #fff;
+  }
+  .hero-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .hero-list {
+    display: flex;
+    gap: 14px;
+  }
+  .hero-item {
+  }
+  .hero-btn {
+    padding: 14px 40px;
     font-size: 14px;
     font-weight: 600;
-    line-height: normal;
-}
-.hero-btn {
+    color: #fff;
+  
     border-radius: 100px;
-    border: 1px solid #FFF;
-    color: #FFF;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: normal;
-}
-.hero-btn-scroll {
-    color: #FFF;
+    border: 1px solid transparent;
+  }
+  .hero-btn.primary {
+    background-color: #fd9222;
+  }
+  .hero-btn.primary:hover,
+  .hero-btn.primary:focus {
+    color: #fd9222;
+    background-color: #fcf1e0;
+  }
+  .hero-btn.secondary {
+    border-color: #fff;
+  }
+  .hero-btn.secondary:hover,
+  .hero-btn.secondary:focus {
+    color: #fd9222;
+    border-color: #fd9222;
+  }
+  .hero-scroll {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  
     font-size: 14px;
     font-weight: 500;
-    line-height: 1.28em; 
-    letter-spacing: -0.03;
-}
+    line-height: 1.28;
+    letter-spacing: -0.03em;
+    color: #fff;
+  }
+  .hero-scroll:hover,
+  .hero-scroll:focus {
+    color: #fd9222;
+  }
+  
+  .hero-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    width: 38px;
+    height: 38px;
+  
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  .hero-scroll:hover .hero-icon,
+  .hero-scroll:focus .hero-icon {
+    background-color: #fd9222;
+  }
 
 /* BENEITS */
 .benefits-section {
+    padding: 50px 0px;
     background-color: #1E1823;
 }
 .visually-hidden {
@@ -165,7 +227,16 @@ button {
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+.bnf-list {
+    display: flex;
+    justify-content: center;
+    gap: 88px;
+}
+.bnf-kist-item {
+    width: 308px;
+}
 .bnf-subtitle {
+    margin-bottom: 18px;
     color: #FFF;
     font-size: 18px;
     font-weight: 600;
